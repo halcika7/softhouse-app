@@ -116,6 +116,13 @@ heroku git:remote -a your_app_name
 * Go to github developer settings and change urls from localhost to heroku url
 * Next initialize Github repository
 * Connect project with github
+
+```
+git add .
+git commit -m 'commit'
+heroku git push HEAD:master
+```
+
 * Add .env.production file to .gitignore
 * Push files to github
 * Populate other fields in .env.production
@@ -141,10 +148,6 @@ heroku git:remote -a your_app_name
 // run following command
 // this will set Heroku Environment variables
 // from .env.production file
-git push heroku master
-// or
-git push heroku HEAD:master
-//then
 bash heroku.env.sh
 ```
 
