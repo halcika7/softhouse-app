@@ -78,7 +78,6 @@ class Passport extends BaseService {
 
       return res.redirect(`${url}/login?token=${accessToken}`);
     } catch (error) {
-      console.log("Passport -> passportCallback -> error", error)
       return res.redirect(`${url}/login?err=${error}`);
     }
   }

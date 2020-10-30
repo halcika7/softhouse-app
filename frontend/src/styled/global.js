@@ -306,7 +306,7 @@ export const GlobalStyle = createGlobalStyle`
     body.dark-mode input:-webkit-autofill,
     body.dark-mode input:-webkit-autofill:hover, 
     body.dark-mode input:-webkit-autofill:focus {
-        -webkit-text-fill-color: #182538;
+        -webkit-text-fill-color: #fff;
         -webkit-box-shadow: 0 0 0px 1000px transparent inset;
         transition: background-color 5000s ease-in-out 0s;
     }
