@@ -113,6 +113,7 @@ heroku git:remote -a your_app_name
 * Change export BACKEND_URL=https://your_app_name.herokuapp.com
 * Then go to netlify.toml file at the same level
 * Change REACT_APP_BACKEND_URL=https://your_app_name.herokuapp.com
+* Go to gihub developer settings and change urls from localhost to heroku url
 * Next initialize Github repository
 * Connect project with github
 * Add .env.production file to .gitignore
