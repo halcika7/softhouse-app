@@ -15,6 +15,7 @@ import routes from './routes/index.mjs';
 const { urlencoded, json } = express;
 
 const { environment, url, server, db } = Environment;
+console.log("Environment", Environment)
 
 const app = express();
 
