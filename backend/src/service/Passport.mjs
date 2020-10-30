@@ -62,6 +62,7 @@ class Passport extends BaseService {
 
       return done(undefined, user);
     } catch (error) {
+      console.log("Passport -> passportStrategy -> error", error)
       return done(error.message, null);
     }
   }
@@ -77,6 +78,7 @@ class Passport extends BaseService {
 
       return res.redirect(`${url}/login?token=${accessToken}`);
     } catch (error) {
+      console.log("Passport -> passportCallback -> error", error)
       return res.redirect(`${url}/login?err=${error}`);
     }
   }
