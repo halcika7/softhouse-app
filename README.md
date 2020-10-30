@@ -1,13 +1,13 @@
-#Softhouse full stack web application
+# Softhouse full stack web application
 ##### User can login with username/email and password or can use github to make an account. 
 ##### User can search  github users by github username and save info about them
 ##### After saving data to a file user can download it from the server
 ___
 
-##Tech used
+## Tech used
 
 
-#####Frontend
+##### Frontend
 * React.js
 * React Router
 * Redux
@@ -15,7 +15,7 @@ ___
 * Reselect
 * Styled Components
 
-#####Backend
+##### Backend
 * Node.js
 * Express
 * Passport
@@ -23,12 +23,12 @@ ___
 
 ---
 
-##Installation
+## Installation
 
-#####I will use yarn package manager insted of npm (not just because I prefer yarn)
-#####I was not able to install recharts using npm because this project uses React.js v17 and recharts asks for 15 to 16 versions. Anyways with yarn it works.
+##### I will use yarn package manager insted of npm (not just because I prefer yarn)
+##### I was not able to install recharts using npm because this project uses React.js v17 and recharts asks for 15 to 16 versions. Anyways with yarn it works.
 
-#####How to intall yarn
+##### How to intall yarn
 * For Mac using brew ---> brew install yarn  or MacPorts ---> sudo port install yarn
 * For Windows there is installer on Yarn website
 * Ubuntu sudo apt update && sudo apt install yarn
@@ -78,7 +78,7 @@ yarn install-dep
 
 **Now we are done with setting up env files**
 
-#####Start project in development mode
+##### Start project in development mode
 
 ```
 cd path_to_project
@@ -86,11 +86,11 @@ yarn dev
 ```
 
 
-##Deployment
+## Deployment
 
 **In this example I will use Netlify to deploy React app and Heroku for server deployment**
 
-####Heroku Setup
+#### Heroku Setup
 * Dont't have an  account ? Wisit website and make one
 * Open up project directory in VS Code
 * If you are on windows change default integrated terminal to git bash
@@ -122,7 +122,7 @@ heroku git:remote -a your_app_name
 
 **Stay with me, only few more steps :)**
 
-####Netlify Setup
+#### Netlify Setup
 
 * Make Netlify account and login
 * Choose make New site from Git
@@ -132,7 +132,7 @@ heroku git:remote -a your_app_name
 * Setting up netlify is finished
 * In few moments it should be deployed
 
-####One more step
+#### One more step
 
 * Open integrated terminal
 
