@@ -154,3 +154,9 @@ bash heroku.env.sh
 * This command should restart node server
 * Visit deployed Netlify website
 * Enjoy
+
+### Example application
+
+https://thirsty-ride-276a9f.netlify.app/
+
+And make sure that the URL does not have / at the end in heroku environment variable, it will throw cors error
