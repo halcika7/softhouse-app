@@ -62,7 +62,6 @@ class Passport extends BaseService {
 
       return done(undefined, user);
     } catch (error) {
-      console.log("Passport -> passportStrategy -> error", error)
       return done(error.message, null);
     }
   }
@@ -96,7 +95,6 @@ passport.use(
       clientID: social.githubID,
       clientSecret: social.githubSecretID,
       callbackURL: social.githubCallBack,
-      proxy: environment === 'production',
     },
     (_, __, profile, done) => Passport.passportStrategy(profile, done)
   )

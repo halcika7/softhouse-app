@@ -105,6 +105,12 @@ const Login = () => {
   }, [error, formDispatch]);
 
   useEffect(() => {
+    return () => {
+      dispatch(clearErrors);
+    };
+  }, [dispatch]);
+
+  useEffect(() => {
     if (serverError) {
       dispatch(setError(serverError));
     }
