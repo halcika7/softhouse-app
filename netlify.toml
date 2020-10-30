@@ -10,7 +10,7 @@
     CONTEXT = "production"
 
 [context.production.environment]
-    GENERATE_SOURCEMAP = false
+    GENERATE_SOURCEMAP = "false"
     REACT_APP_BACKEND_URL = "https://softhouse-app.herokuapp.com/api"
     REACT_APP_GITHUB_URL = "https://api.github.com"
 
