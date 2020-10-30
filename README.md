@@ -34,7 +34,7 @@ ___
 * Ubuntu sudo apt update && sudo apt install yarn
 
 ```
-git clone .... file-name
+git clone git@github.com:halcika7/softhouse-app.git file-name
 cd file-name
 yarn install-dep
 ```
