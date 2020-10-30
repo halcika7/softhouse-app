@@ -76,7 +76,7 @@ const ToggleButtonTheme = () => {
         defaultChecked={!value}
         onClick={toggle}
       />
-      <Label htmlFor="lights-toggle" aria-label="togglle theme button" />
+      <Label htmlFor="lights-toggle" aria-label="toggle theme button" />
     </Wrapper>
   );
 };

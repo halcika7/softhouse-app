@@ -58,6 +58,9 @@ class Auth extends BaseController {
   }
 
   logout(req, res) {
+    if (req.logout) {
+      req.logout();
+    }
     CookieService.removeRefreshToken(res);
     return this.sendResponse(res, 200, {});
   }

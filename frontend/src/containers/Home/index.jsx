@@ -32,7 +32,7 @@ const HeroCopy = styled.div`
     box-shadow: 48px 16px 48px rgba(24, 37, 56, 0.12);
     border-radius: 4px;
     transform: perspective(1000px) rotateY(16deg) rotateX(2deg) rotateZ(-4deg)
-      scaleY(0.95) translatex(2%);
+      scaleY(0.95) translateX(2%);
   }
 `;
 

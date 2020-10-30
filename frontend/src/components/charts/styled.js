@@ -31,7 +31,7 @@ export const TooltipWrapper = styled.div`
 export const Paragraph = styled.p`
   ${AlignCenterFlex}
   margin: 0;
-  111;
+  color: #111;
 `;
 
 export const Span = styled.span`

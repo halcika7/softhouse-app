@@ -41,7 +41,7 @@ class Passport extends BaseService {
           picture,
           githubId: id,
           username: login,
-          hasPasssword: false,
+          hasPassword: false,
         });
 
         DataRepository.createUserData(newUser._id);

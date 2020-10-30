@@ -28,7 +28,7 @@ export const inputsMapping = {
     type: 'text',
   },
   following_url: {
-    label: 'Folowing URL',
+    label: 'Following URL',
     type: 'text',
   },
   gists_url: {

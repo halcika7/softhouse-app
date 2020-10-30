@@ -25,10 +25,10 @@ ___
 
 ## Installation
 
-##### I will use yarn package manager insted of npm (not just because I prefer yarn)
+##### I will use yarn package manager instead of npm (not just because I prefer yarn)
 ##### I was not able to install recharts using npm because this project uses React.js v17 and recharts asks for 15 to 16 versions. Anyways with yarn it works.
 
-##### How to intall yarn
+##### How to install yarn
 * For Mac using brew ---> brew install yarn  or MacPorts ---> sudo port install yarn
 * For Windows there is installer on Yarn website
 * Ubuntu sudo apt update && sudo apt install yarn
@@ -64,17 +64,17 @@ yarn install-dep
 * Then click on OAuth Apps and then New OAuth app
 * Fill the fields
 * For development Homepage Url should be BACKEND_URL from .env + /api/auth/github
-* And calback BACKEND_URL/api/auth/github/callback
+* And callback BACKEND_URL/api/auth/github/callback
 * Click Register application
 * Then it wil take you to new screen
 * There is Client ID
-* To get Client Secret click "genarate a new client secret"
+* To get Client Secret click "generate a new client secret"
 * Now you can add them to the .env file
 
 **For now we are finished with backend part, now go to frontend directory**
 
-* Inside this direcctory go to .env file
-* Change REACT_APP_BACKEND_URL to match BAKEND_URL from previous file
+* Inside this directory go to .env file
+* Change REACT_APP_BACKEND_URL to match BACKEND_URL from previous file
 
 **Now we are done with setting up env files**
 
@@ -91,7 +91,7 @@ yarn dev
 **In this example I will use Netlify to deploy React app and Heroku for server deployment**
 
 #### Heroku Setup
-* Dont't have an  account ? Wisit website and make one
+* Don't have an  account ? Visit website and make one
 * Open up project directory in VS Code
 * If you are on windows change default integrated terminal to git bash
 * Next open integrated terminal
@@ -113,7 +113,7 @@ heroku git:remote -a your_app_name
 * Change export BACKEND_URL=https://your_app_name.herokuapp.com
 * Then go to netlify.toml file at the same level
 * Change REACT_APP_BACKEND_URL=https://your_app_name.herokuapp.com
-* Go to gihub developer settings and change urls from localhost to heroku url
+* Go to github developer settings and change urls from localhost to heroku url
 * Next initialize Github repository
 * Connect project with github
 * Add .env.production file to .gitignore

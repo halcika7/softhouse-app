@@ -10,7 +10,7 @@ class User extends SingletonClass {
     super(User);
   }
 
-  hashPasword(password) {
+  hashPassword(password) {
     return HashService.hash(password);
   }
 
@@ -46,7 +46,7 @@ class User extends SingletonClass {
     githubId,
     picture,
   }) {
-    const hash = await this.hashPasword(password);
+    const hash = await this.hashPassword(password);
     const userData = {
       password: hash,
       username,
@@ -61,7 +61,7 @@ class User extends SingletonClass {
   }
 
   getUserHash(password, id) {
-    return Promise.all([this.findById(id), this.hashPasword(password)]);
+    return Promise.all([this.findById(id), this.hashPassword(password)]);
   }
 }
 

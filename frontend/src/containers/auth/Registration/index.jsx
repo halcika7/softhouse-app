@@ -12,7 +12,7 @@ import {
   searchByUsername,
 } from '@actions';
 
-// componentss
+// components
 import { CenterDiv, ErrorDiv } from '@styled/components';
 import {
   ButtonsWrapper,
@@ -52,8 +52,8 @@ const initialFormState = {
   inputDirty: {
     email: false,
     username: false,
-    pasword: false,
-    pasword2: false,
+    password: false,
+    password2: false,
   },
   inputErrors: {
     email: '',

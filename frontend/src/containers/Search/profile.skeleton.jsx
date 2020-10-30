@@ -99,7 +99,7 @@ const ProfileSkeleton = () => (
       </ProfileInfo>
     </Cards2>
     <Cards2>
-      <div>Folowers</div>
+      <div>Followers</div>
       <FollowersWrapper>
         {arr.map(val => (
           <div key={val}>

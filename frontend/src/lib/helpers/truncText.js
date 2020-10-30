@@ -1,4 +1,4 @@
-export const trucText = (value, length) => {
+export const truncText = (value, length) => {
     if (typeof value !== 'string') return value;
 
     if(value.length <= length) return value;

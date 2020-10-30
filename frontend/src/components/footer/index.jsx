@@ -128,7 +128,7 @@ const Footer = () => {
                 rel="noreferrer"
                 href="https://www.linkedin.com/in/haris-beslic/"
               >
-                <span className="screen-reader-text">Linkedin</span>
+                <span className="screen-reader-text">LinkedIn</span>
                 <In />
               </a>
             </li>

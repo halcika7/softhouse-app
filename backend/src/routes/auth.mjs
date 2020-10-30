@@ -7,7 +7,7 @@ import { validate } from '../middleware/bodyValidation.mjs';
 import { UserRepository } from '../repository/User.mjs';
 import { HashService } from '../service/Hash.mjs';
 import { authMiddleware } from '../middleware/auth.mjs';
-import { checkPasswod, checkPasword2 } from '../helpers/index.mjs';
+import { checkPassword, checkPassword2 } from '../helpers/index.mjs';
 
 const { Router } = express;
 
@@ -62,8 +62,8 @@ router.post(
         return true;
       })
       .withMessage('Email already in use'),
-    checkPasswod,
-    checkPasword2,
+    checkPassword,
+    checkPassword2,
   ]),
   AuthController.register
 );

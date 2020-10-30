@@ -94,7 +94,7 @@ export const SubmitButton = styled(BaseButton)`
   font-weight: 400;
   width: auto;
   box-shadow: ${props => props.theme.boxShadow};
-  transition: box-shdow 0.3 ease-in-out;
+  transition: box-shadow 0.3 ease-in-out;
 
   &:active {
     box-shadow: none;

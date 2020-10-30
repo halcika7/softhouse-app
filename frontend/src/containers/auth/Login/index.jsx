@@ -42,7 +42,7 @@ const initialFormState = {
   },
   inputDirty: {
     username: false,
-    pasword: false,
+    password: false,
   },
   errors: {
     username: '',
@@ -157,7 +157,7 @@ const Login = () => {
           </form>
 
           <LightWrapper>
-            <a href="/">Forget Passowrd?</a>
+            <a href="/">Forget Password?</a>
           </LightWrapper>
 
           <ButtonsWrapper>

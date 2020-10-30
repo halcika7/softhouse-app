@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { createSelector } from 'reselect';
 
-// ations
+// actions
 import { getFiles, resetFiles, downloadFile, clearFileMessage } from '@actions';
 
 // components

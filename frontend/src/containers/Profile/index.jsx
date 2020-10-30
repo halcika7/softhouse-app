@@ -50,8 +50,8 @@ const initialFormState = {
     password2: false,
   },
   inputDirty: {
-    pasword: false,
-    pasword2: false,
+    password: false,
+    password2: false,
   },
   inputErrors: {
     password: '',

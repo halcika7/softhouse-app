@@ -39,7 +39,7 @@ const AuthWrapper = styled(Flex)`
   }
 `;
 
-const LoadingWrrapper = styled(CenterDiv)`
+const LoadingWrapper = styled(CenterDiv)`
   min-height: 100vh;
 `;
 
@@ -50,9 +50,9 @@ const Routes = () => {
 
   if (loading) {
     return (
-      <LoadingWrrapper>
+      <LoadingWrapper>
         <Spinner />
-      </LoadingWrrapper>
+      </LoadingWrapper>
     );
   }
 

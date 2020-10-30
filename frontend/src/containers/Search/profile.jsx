@@ -10,7 +10,7 @@ import {
 } from './styled';
 
 // helpers
-import { trucText } from '@helpers/truncText';
+import { truncText } from '@helpers/truncText';
 
 import { ReactComponent as Link } from '@assets/images/link.svg';
 import { ReactComponent as Marker } from '@assets/images/marker.svg';
@@ -44,7 +44,7 @@ const Profile = ({
               Follow
             </a>
           </ImageWrapper>
-          <P>{trucText(bio || '', 100)}</P>
+          <P>{truncText(bio || '', 100)}</P>
           <SmallInfo>
             <Building /> <span>{company || 'Me'}</span>
           </SmallInfo>

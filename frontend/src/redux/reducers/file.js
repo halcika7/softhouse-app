@@ -4,7 +4,7 @@ const INITIAL_STATE = {
   loading: true,
   files: null,
   message: '',
-  satatus: null,
+  status: null,
 };
 
 const fileReducer = (state = INITIAL_STATE, action) => {
