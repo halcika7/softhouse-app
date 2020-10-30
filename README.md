@@ -110,7 +110,7 @@ heroku git:remote -a your_app_name
 ```
 
 * At the root of the directory open .env.production file
-* Change export BACKEND_URL=https://your_app_name.herokuapp.com
+* Change GITHUB_CALLBACK=https://your_app_name.herokuapp.com/api/auth/github/callback
 * Then go to netlify.toml file at the same level
 * Change REACT_APP_BACKEND_URL=https://your_app_name.herokuapp.com
 * Go to github developer settings and change urls from localhost to heroku url
@@ -141,6 +141,10 @@ heroku git:remote -a your_app_name
 // run following command
 // this will set Heroku Environment variables
 // from .env.production file
+git push heroku master
+// or
+git push heroku HEAD:master
+//then
 bash heroku.env.sh
 ```
 
