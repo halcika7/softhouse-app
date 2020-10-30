@@ -1,0 +1,31 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --experimental-modules src/index.mjs",
+    "start": "node --experimental-modules src/index.mjs"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "helmet": "^4.1.1",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.10",
+    "passport": "^0.4.1",
+    "passport-github2": "^0.1.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "engines": {
+    "yarn": "1.x"
+  }
+}

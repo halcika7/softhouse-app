@@ -1,0 +1,27 @@
+[build]
+  base = "frontend/"
+
+  publish = "build/"
+
+  command = "yarn build"
+
+[build.environments]
+    YARN_VERSION = "1.22.4"
+    CONTEXT = "production"
+
+[context.production.environment]
+    GENERATE_SOURCEMAP = false
+    REACT_APP_BACKEND_URL = "https://softhouse-app.herokuapp.com/api"
+    REACT_APP_GITHUB_URL = "https://api.github.com"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"

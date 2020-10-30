@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "rootDir": "src",
+      "baseUrl": ".",
+      "paths": {
+        "@axios": ["src/lib/axios"],
+        "@hooks/*": ["src/lib/hooks/*"],
+        "@styled/components": ["src/styled/components/index"],
+        "@actions": ["src/redux/actions/index"],
+        "@regex": ["src/lib/regex"],
+        "@helpers/*": ["src/lib/helpers/*"],
+        "@assets/*": ["src/assets/*"],
+        "@components/*": ["src/components/*"],
+        "@types": ["src/redux/types/index"]
+      }
+    }
+  }
