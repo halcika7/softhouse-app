@@ -46,6 +46,7 @@ class Auth extends BaseController {
   async refreshToken(req, res) {
     const status = req.query.first ? 200 : 401;
     const token = req.cookies[webToken.REFRESH_TOKEN_NAME];
+    console.log("Auth -> refreshToken -> token", token)
 
     try {
       const user = await JWTService.verifyToken(token, true);
