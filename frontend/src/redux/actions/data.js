@@ -45,7 +45,6 @@ export const getUserData = async dispatch => {
     data: { data },
     status,
   } = await axios.get('/data/');
-  console.log("status", status)
 
   let parsed = [];
   let ids = [];

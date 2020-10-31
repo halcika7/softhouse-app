@@ -4,8 +4,8 @@ const { REFRESH_TOKEN_NAME, REFRESH_TOKEN_PATH } = Environment.webToken;
 
 const refreshOptions = {
   httpOnly: true,
-  // path: REFRESH_TOKEN_PATH,
-  sameSite: true,
+  path: REFRESH_TOKEN_PATH,
+  sameSite: "none",
   secure: Environment.environment === 'production',
 };
 

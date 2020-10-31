@@ -70,28 +70,30 @@ const LogoutButton = styled(LoginLink)`
 
 const Nav = () => {
   const dispatch = useDispatch();
-  const { isAuthenticated } = useAuth();
+  const { isAuthenticated, loading } = useAuth();
 
   const onLogout = () => dispatch(logout);
 
   return (
     <Header>
-      <Container>
-        <LogoLink />
-        <ToggleButtonTheme />
-        {!isAuthenticated ? (
-          <Links>
-            <LoginLink to="/login">Login</LoginLink>
-            <RegisterLink to="/register">Register</RegisterLink>
-          </Links>
-        ) : (
-          <Links>
-            <LogoutButton type="button" onClick={onLogout} as="button">
-              Logout
-            </LogoutButton>
-          </Links>
-        )}
-      </Container>
+      {!loading && (
+        <Container>
+          <LogoLink />
+          <ToggleButtonTheme />
+          {!isAuthenticated ? (
+            <Links>
+              <LoginLink to="/login">Login</LoginLink>
+              <RegisterLink to="/register">Register</RegisterLink>
+            </Links>
+          ) : (
+            <Links>
+              <LogoutButton type="button" onClick={onLogout} as="button">
+                Logout
+              </LogoutButton>
+            </Links>
+          )}
+        </Container>
+      )}
     </Header>
   );
 };
