@@ -117,6 +117,7 @@ const Login = () => {
     }
     if (token) {
       dispatch(authSuccess(token));
+      history.replace('/login');
     }
   }, [serverError, token, dispatch, history]);
 
