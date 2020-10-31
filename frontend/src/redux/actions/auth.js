@@ -52,11 +52,8 @@ export const register = registerData => async dispatch => {
 };
 
 export const refresh = (firstLoad = false) => async dispatch => {
-  const path = firstLoad ? `/auth/refresh?first=first` : '/auth/refresh';
+  const path = firstLoad ? `/auth/refresh?first=first` : '/auth/refresh'
   const { data, status } = await axios.get(path);
-  console.log("data", data)
-
-  if (!data.accessToken && !firstLoad) return;
 
   if (status === 401 || !data.accessToken) {
     return dispatch(logoutAction);
@@ -67,6 +64,6 @@ export const refresh = (firstLoad = false) => async dispatch => {
 
 export const logout = async dispatch => {
   await axios.post('/auth/logout');
-
+  
   return dispatch(logoutAction);
 };
