@@ -20,6 +20,9 @@ const authReducer = (state = INITIAL_STATE, action) => {
     case AuthTypes.SET_ERROR: {
       return { ...state, error: action.error };
     }
+    case AuthTypes.SET_AUTH_LOADING: {
+      return { ...state, loading: true };
+    }
     case AuthTypes.SET_ERRORS: {
       return { ...state, errors: action.errors };
     }

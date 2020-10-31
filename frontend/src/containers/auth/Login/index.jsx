@@ -25,7 +25,7 @@ import Input from '@components/input/index';
 import ButtonSpinner from '@components/spinner/buttonSpinner';
 
 // actions
-import { login, clearErrors, authSuccess, setError } from '@actions';
+import { login, clearErrors, setError, authSuccessSocial } from '@actions';
 
 import { ReactComponent as LoginLight } from '@assets/images/login-light.svg';
 import { ReactComponent as LoginDark } from '@assets/images/login-dark.svg';
@@ -116,7 +116,7 @@ const Login = () => {
       history.replace('/login');
     }
     if (token) {
-      dispatch(authSuccess(token));
+      dispatch(authSuccessSocial(token));
       history.replace('/login');
     }
   }, [serverError, token, dispatch, history]);
