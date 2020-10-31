@@ -73,7 +73,8 @@ class Passport extends BaseService {
       const { id } = user;
 
       const accessToken = JWTService.signToken({ id });
-      CookieService.setRefreshToken(res, JWTService.signToken({ id }, true));
+      const refresh = JWTService.signToken({ id }, true);
+      CookieService.setRefreshToken(res, refresh);
 
       return res.redirect(`${url}/login?token=${accessToken}`);
     } catch (error) {
