@@ -5,7 +5,6 @@ const { REFRESH_TOKEN_NAME, REFRESH_TOKEN_PATH } = Environment.webToken;
 const refreshOptions = {
   httpOnly: true,
   path: REFRESH_TOKEN_PATH,
-  secure: Environment.environment === 'production',
 };
 
 export class CookieService {
