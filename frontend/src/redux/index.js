@@ -7,11 +7,11 @@ import { rootReducer } from './reducers';
 const bindMiddleware = () => {
   const middlewares = [thunk];
 
-  if (process.env.NODE_ENV !== 'production') {
+  // if (process.env.NODE_ENV !== 'production') {
     return composeWithDevTools(applyMiddleware(...middlewares));
-  }
+  // }
   
-  return applyMiddleware(...middlewares);
+  // return applyMiddleware(...middlewares);
 };
 
 export const store = createStore(
