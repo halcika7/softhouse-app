@@ -113,12 +113,10 @@ const Login = () => {
   useEffect(() => {
     if (serverError) {
       dispatch(setError(serverError));
+      history.replace('/login');
     }
     if (token) {
       dispatch(authSuccess(token));
-    }
-    if (serverError || token) {
-      history.replace('/login');
     }
   }, [serverError, token, dispatch, history]);
 

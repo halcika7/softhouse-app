@@ -9,7 +9,7 @@ import BaseService from './Base.mjs';
 
 const { Strategy } = github;
 
-const { url, social, img, environment } = Environment;
+const { url, social, img } = Environment;
 
 class Passport extends BaseService {
   constructor() {
