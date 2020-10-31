@@ -48,6 +48,7 @@ class Auth extends BaseController {
     const token = req.cookies[webToken.REFRESH_TOKEN_NAME];
     console.log("Auth -> refreshToken -> req.cookies", req.cookies)
     console.log("Auth -> refreshToken -> token", token)
+    console.log('Signed Cookies: ', req.signedCookies)
 
     try {
       const user = await JWTService.verifyToken(token, true);
