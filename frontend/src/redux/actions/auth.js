@@ -55,7 +55,7 @@ export const refresh = (firstLoad = false) => async dispatch => {
   const path = firstLoad ? `/auth/refresh?first=first` : '/auth/refresh';
   const { data, status } = await axios.get(path);
 
-  if (status === 401 || !data.accessToken) {
+  if ((status === 401 || !data.accessToken) && !firstLoad) {
     return dispatch(logoutAction);
   }
 
@@ -66,12 +66,4 @@ export const logout = async dispatch => {
   await axios.post('/auth/logout');
 
   return dispatch(logoutAction);
-};
-
-export const authSuccessSocial = token => dispatch => {
-  dispatch({
-    type: AuthTypes.SET_AUTH_LOADING,
-  });
-
-  return dispatch(authSuccess(token));
 };
