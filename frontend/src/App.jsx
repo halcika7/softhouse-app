@@ -11,12 +11,17 @@ import Footer from './components/footer/index';
 import Routes from './routes';
 import { Container } from './styled/components';
 
+let called = false;
+
 function App() {
   const dispatch = useDispatch();
   const { isAuthenticated } = useAuth();
 
   useEffect(() => {
-    dispatch(refresh(true));
+    if(!called) {
+      dispatch(refresh(true));
+      called = true;
+    }
   }, [dispatch]);
 
   useEffect(() => {
