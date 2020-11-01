@@ -123,7 +123,7 @@ git commit -m 'commit'
 heroku git push HEAD:master
 ```
 
-* Add .env.production file to .gitignore
+* Add .env.production file to .gitignore and .env from backend directory
 * Push files to github
 * Populate other fields in .env.production
 * Most of them you can use from local configuration except URL (Netlify Url)
